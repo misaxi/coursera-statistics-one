@@ -17,7 +17,8 @@ describe(data$pre.wm.v1[data$cond=="aer"])
 describe(data$post.wm.s1[data$cond=="des"])
 describe(data$post.wm.s1[data$cond=="aer"])
 
-plot(data$pre.wm.s1, data$post.wm.s1)
-abline(lm(data$post.wm.s1 ~ data$pre.wm.s1))
-plot(data$pre.wm.s2, data$post.wm.s2)
-abline(lm(data$post.wm.s2 ~ data$pre.wm.s2))
+
+plot(data$pre.wm.s1 ~ data$post.wm.s1)
+abline(lm(data$pre.wm.s1 ~ data$post.wm.s1))
+plot(data$pre.wm.s2 ~ data$post.wm.s2)
+abline(lm(data$pre.wm.s2 ~ data$post.wm.s2))
