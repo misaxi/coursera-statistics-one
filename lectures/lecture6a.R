@@ -1,6 +1,6 @@
 library(psych)
 
-impact <- read.table("supplemental_STATS1.EX.02.TXT", header=T)
+impact <- read.table("supplemental_STATS1.EX.02.txt", header=T)
 class(impact)
 names(impact)
 
@@ -17,6 +17,7 @@ abline(lm(impact$memory.verbal~impact$memory.visual), col="blue")
 
 cor.test(impact$memory.verbal, impact$memory.visual)
 
+# Correlation A & B
 cor(impact)
 
 library(gclus)
