@@ -1,2 +1,5 @@
 .RData
 .Rhistory
+*.mp4
+*.srt
+*.html
