@@ -22,3 +22,6 @@ plot(data$pre.wm.s1 ~ data$post.wm.s1)
 abline(lm(data$pre.wm.s1 ~ data$post.wm.s1))
 plot(data$pre.wm.s2 ~ data$post.wm.s2)
 abline(lm(data$pre.wm.s2 ~ data$post.wm.s2))
+
+cor(data[1:100,3:10])
+cor(data[101:200,3:10])
