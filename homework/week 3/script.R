@@ -33,3 +33,15 @@ summary(model1)
 
 model2 = lm(endr$endurance ~ endr$activeyears)
 summary(model2)
+
+model3 = lm(endr$endurance ~ endr$age + endr$activeyears)
+summary(model3)
+
+model1.z = lm(scale(endr$endurance) ~ scale(endr$age))
+summary(model1.z)
+
+model2.z = lm(scale(endr$endurance) ~ scale(endr$activeyears))
+summary(model2.z)
+
+model3.z = lm(scale(endr$endurance) ~ scale(endr$age) + scale(endr$activeyears))
+summary(model3.z)
